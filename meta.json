@@ -48,5 +48,6 @@
             "title":"Media ID"
         }
     ],
+    "icon": "instagram",
     "title": "Instagram Get Media from Location" /* Required.A display name for the module */
 }
