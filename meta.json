@@ -2,15 +2,17 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
         {
             "id": "location",
             "title":"Location ID"
         }
     ],
-    //Required. Outputs the module emits.
     "outputs": [
+        {
+            "id": "id",
+            "title":"Media ID"
+        },
         {
             "id": "username",
             "title":"Username"
@@ -18,18 +20,6 @@
         {
             "id": "full_name",
             "title":"Name"
-        },
-        {
-            "id": "media",
-            "title":"Media"
-        },
-        {
-            "id": "caption",
-            "title":"Caption"
-        },
-        {
-            "id": "likes",
-            "title":"Likes"
         },
         {
             "id": "tags",
@@ -44,10 +34,22 @@
             "title":"URL"
         },
         {
-            "id": "id",
-            "title":"Media ID"
+            "id": "standard_resolution",
+            "title":"Media"
+        },
+        {
+            "id": "caption_text",
+            "title":"Caption"
+        },
+        {
+            "id": "likes",
+            "title":"Likes"
         }
     ],
+    "providers": [{
+        "name": "instagram",
+        "scopes": [ "basic" ]
+    }],
     "icon": "instagram",
-    "title": "Instagram Get Media from Location" /* Required.A display name for the module */
+    "title": "Instagram Get Media from Location"
 }
