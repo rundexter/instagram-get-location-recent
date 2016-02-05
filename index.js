@@ -6,15 +6,22 @@ var pickInputs = {
         'location': { key: 'location', validate: { req: true } }
     },
     pickOutputs = {
-        'id': { key: 'data', fields: ['id']},
-        'username': { key: 'data', fields: ['user.username']},
-        'full_name': { key: 'data', fields: ['user.full_name']},
-        'tags': { key: 'data', fields: ['tags']},
-        'location': { key: 'data', fields: ['location']},
-        'link': { key: 'data', fields: ['link']},
-        'standard_resolution': { key: 'data', fields: ['images.standard_resolution.url']},
-        'caption_text': { key: 'data', fields: ['caption.text']},
-        'likes': { key: 'data', fields: ['likes.count']}
+        '-': {
+            key: 'data',
+            fields: {
+                'id': 'id',
+                'type': 'type',
+                'created_time': 'created_time',
+                'username': 'user.username',
+                'full_name': 'user.full_name',
+                'tags': 'tags',
+                'location': 'location',
+                'link': 'link',
+                'standard_resolution': 'images.standard_resolution.url',
+                'caption_text': 'caption.text',
+                'likes': 'likes.count'
+            }
+        }
     };
 
 module.exports = {

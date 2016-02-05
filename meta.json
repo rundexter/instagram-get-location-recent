@@ -14,6 +14,10 @@
             "title":"Media ID"
         },
         {
+            "id": "type",
+            "title":"Media Type"
+        },
+        {
             "id": "username",
             "title":"Username"
         },
@@ -44,6 +48,10 @@
         {
             "id": "likes",
             "title":"Likes"
+        },
+        {
+            "id": "created_time",
+            "title": "Created At"
         }
     ],
     "providers": [{
