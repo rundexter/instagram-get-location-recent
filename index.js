@@ -42,8 +42,8 @@ module.exports = {
 
         instagram.use({ access_token: _.get(credentials, 'access_token') });
         instagram.location_media_recent(inputs.location, function (error, result) {
-
             error? this.fail(error) : this.complete(util.pickOutputs({ data: result }, pickOutputs));
+            
         }.bind(this));
     }
 };
